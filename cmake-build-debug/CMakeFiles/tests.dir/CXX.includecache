@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/consistent.h
+
+/home/foxers/CLionProjects/hw-2/tests/tests.cpp
+gtest/gtest.h
+-
+iostream
+-
+cerrno
+-
+fstream
+-
+consistent.h
+/home/foxers/CLionProjects/hw-2/tests/consistent.h
+

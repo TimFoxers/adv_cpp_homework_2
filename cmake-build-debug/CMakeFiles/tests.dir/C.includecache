@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/consistent.h
+
+/home/foxers/CLionProjects/hw-2/src/consistent.c
+consistent.h
+/home/foxers/CLionProjects/hw-2/src/consistent.h
+
+/home/foxers/CLionProjects/hw-2/src/parallel.c
+
