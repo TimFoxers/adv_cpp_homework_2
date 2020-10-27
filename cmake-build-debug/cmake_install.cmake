@@ -1,4 +1,4 @@
-# Install script for directory: /home/foxers/CLionProjects/hw-2
+# Install script for directory: /home/foxers/CLionProjects/adv_cpp_homework_2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/foxers/CLionProjects/hw-2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

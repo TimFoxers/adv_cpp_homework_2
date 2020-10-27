@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/consistent.h
+
+../include/main.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+consistent.h
+../include/consistent.h
+parallel.h
+../include/parallel.h
+
+../include/parallel.h
+pthread.h
+-
+
+/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c
+consistent.h
+/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.h
+
+/home/foxers/CLionProjects/adv_cpp_homework_2/src/main.c
+main.h
+/home/foxers/CLionProjects/adv_cpp_homework_2/src/main.h
+
+/home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c
+parallel.h
+/home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.h
+stdio.h
+-
+

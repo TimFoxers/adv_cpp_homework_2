@@ -8,5 +8,6 @@
 #define DEFAULT_INPUT stdin
 #define DEFAULT_OUTPUT stdout
 #include "consistent.h"
+#include "parallel.h"
 
 #endif //HW1_MAIN_H

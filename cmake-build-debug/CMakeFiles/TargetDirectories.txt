@@ -1,5 +1,5 @@
-/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/run.dir
-/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/test.dir
-/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/tests.dir
-/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/run.dir
+/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/test.dir
+/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/tests.dir
+/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/edit_cache.dir

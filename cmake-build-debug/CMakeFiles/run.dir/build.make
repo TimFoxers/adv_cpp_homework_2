@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/foxers/CLionProjects/hw-2
+CMAKE_SOURCE_DIR = /home/foxers/CLionProjects/adv_cpp_homework_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/foxers/CLionProjects/hw-2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/run.dir/depend.make
@@ -79,42 +79,42 @@ include CMakeFiles/run.dir/flags.make
 
 CMakeFiles/run.dir/src/main.c.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/run.dir/src/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/run.dir/src/main.c.o   -c /home/foxers/CLionProjects/hw-2/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/run.dir/src/main.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/run.dir/src/main.c.o   -c /home/foxers/CLionProjects/adv_cpp_homework_2/src/main.c
 
 CMakeFiles/run.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/run.dir/src/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foxers/CLionProjects/hw-2/src/main.c > CMakeFiles/run.dir/src/main.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foxers/CLionProjects/adv_cpp_homework_2/src/main.c > CMakeFiles/run.dir/src/main.c.i
 
 CMakeFiles/run.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/run.dir/src/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foxers/CLionProjects/hw-2/src/main.c -o CMakeFiles/run.dir/src/main.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foxers/CLionProjects/adv_cpp_homework_2/src/main.c -o CMakeFiles/run.dir/src/main.c.s
 
 CMakeFiles/run.dir/src/consistent.c.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/consistent.c.o: ../src/consistent.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/run.dir/src/consistent.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/run.dir/src/consistent.c.o   -c /home/foxers/CLionProjects/hw-2/src/consistent.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/run.dir/src/consistent.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/run.dir/src/consistent.c.o   -c /home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c
 
 CMakeFiles/run.dir/src/consistent.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/run.dir/src/consistent.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foxers/CLionProjects/hw-2/src/consistent.c > CMakeFiles/run.dir/src/consistent.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c > CMakeFiles/run.dir/src/consistent.c.i
 
 CMakeFiles/run.dir/src/consistent.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/run.dir/src/consistent.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foxers/CLionProjects/hw-2/src/consistent.c -o CMakeFiles/run.dir/src/consistent.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c -o CMakeFiles/run.dir/src/consistent.c.s
 
 CMakeFiles/run.dir/src/parallel.c.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/parallel.c.o: ../src/parallel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/run.dir/src/parallel.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/run.dir/src/parallel.c.o   -c /home/foxers/CLionProjects/hw-2/src/parallel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/run.dir/src/parallel.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/run.dir/src/parallel.c.o   -c /home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c
 
 CMakeFiles/run.dir/src/parallel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/run.dir/src/parallel.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foxers/CLionProjects/hw-2/src/parallel.c > CMakeFiles/run.dir/src/parallel.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c > CMakeFiles/run.dir/src/parallel.c.i
 
 CMakeFiles/run.dir/src/parallel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/run.dir/src/parallel.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foxers/CLionProjects/hw-2/src/parallel.c -o CMakeFiles/run.dir/src/parallel.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c -o CMakeFiles/run.dir/src/parallel.c.s
 
 # Object files for target run
 run_OBJECTS = \
@@ -130,7 +130,7 @@ run: CMakeFiles/run.dir/src/consistent.c.o
 run: CMakeFiles/run.dir/src/parallel.c.o
 run: CMakeFiles/run.dir/build.make
 run: CMakeFiles/run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	cd /home/foxers/CLionProjects/hw-2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/foxers/CLionProjects/hw-2 /home/foxers/CLionProjects/hw-2 /home/foxers/CLionProjects/hw-2/cmake-build-debug /home/foxers/CLionProjects/hw-2/cmake-build-debug /home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/foxers/CLionProjects/adv_cpp_homework_2 /home/foxers/CLionProjects/adv_cpp_homework_2 /home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug /home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug /home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run.dir/depend
 

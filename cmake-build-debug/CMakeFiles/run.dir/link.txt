@@ -1,1 +1,1 @@
-/usr/bin/gcc -g   CMakeFiles/run.dir/src/main.c.o CMakeFiles/run.dir/src/consistent.c.o CMakeFiles/run.dir/src/parallel.c.o  -o run 
+/usr/bin/gcc -g   CMakeFiles/run.dir/src/main.c.o CMakeFiles/run.dir/src/consistent.c.o CMakeFiles/run.dir/src/parallel.c.o  -o run  -pthread 

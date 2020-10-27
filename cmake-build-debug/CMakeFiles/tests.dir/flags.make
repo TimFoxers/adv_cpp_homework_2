@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/gcc
 # compile CXX with /usr/bin/g++
-C_FLAGS = -g   -std=gnu99
+C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/foxers/CLionProjects/hw-2/include 
+C_INCLUDES = -I/home/foxers/CLionProjects/adv_cpp_homework_2/include 
 
 CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/foxers/CLionProjects/hw-2/include 
+CXX_INCLUDES = -I/home/foxers/CLionProjects/adv_cpp_homework_2/include 
 

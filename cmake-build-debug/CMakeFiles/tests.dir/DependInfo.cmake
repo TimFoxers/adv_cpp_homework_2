@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/foxers/CLionProjects/hw-2/src/consistent.c" "/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/tests.dir/src/consistent.c.o"
-  "/home/foxers/CLionProjects/hw-2/src/parallel.c" "/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/tests.dir/src/parallel.c.o"
+  "/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c" "/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/tests.dir/src/consistent.c.o"
+  "/home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c" "/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/tests.dir/src/parallel.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/foxers/CLionProjects/hw-2/tests/tests.cpp" "/home/foxers/CLionProjects/hw-2/cmake-build-debug/CMakeFiles/tests.dir/tests/tests.cpp.o"
+  "/home/foxers/CLionProjects/adv_cpp_homework_2/tests/tests.cpp" "/home/foxers/CLionProjects/adv_cpp_homework_2/cmake-build-debug/CMakeFiles/tests.dir/tests/tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
