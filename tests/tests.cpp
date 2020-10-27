@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
 #include <iostream>
-#include <cerrno>
-#include <fstream>
 
 extern "C" {
     #include "consistent.h"
