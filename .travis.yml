@@ -1,1 +1,18 @@
-language: c++
+dist:     trusty
+sudo:     required
+
+language: c
+
+os:
+  - linux
+
+compiler:
+  - gcc
+
+addons:
+  apt:
+    update: true
+    packages:
+      - cmake
+      - cppcheck
+      - valgrind
