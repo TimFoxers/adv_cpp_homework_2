@@ -17,10 +17,6 @@ gtest/gtest.h
 -
 iostream
 -
-cerrno
--
-fstream
--
 consistent.h
 /home/foxers/CLionProjects/adv_cpp_homework_2/tests/consistent.h
 parallel.h

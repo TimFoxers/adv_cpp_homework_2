@@ -1,12 +1,6 @@
 #include "parallel.h"
 #include <stdio.h>
 
-typedef struct data{
-    int iterator;
-    int value;
-    int *array;
-} data;
-
 void* threadFunc(void* args){
     data* arg = (data*) args;
     arg->array[arg->iterator] = arg->value;
