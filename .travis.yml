@@ -1,0 +1,6 @@
+language: c
+rvm:
+  11
+  pthread.h
+  stdio.h
+  malloc.h
