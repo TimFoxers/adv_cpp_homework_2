@@ -29,11 +29,11 @@ bool WorkTimeParallel() {
 }
 
 TEST(rw_comp, timetest1) {
-    WorkTimeConsistent();
+    WorkTimeConsistent(); //измерение времени последовательного алгоритма
 }
 
 TEST(rw_comp, timetest2) {
-    WorkTimeParallel();
+    WorkTimeParallel(); //измерение времени параллельного алгоритма
 }
 
 int main(int argc, char *argv[]) {

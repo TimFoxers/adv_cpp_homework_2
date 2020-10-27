@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 typedef struct data{
-    int iterator; //номер обрабатываемой строки
+    int iterator;
     int value;
     int *array;
 } data;
@@ -10,7 +10,6 @@ typedef struct data{
 void* threadFunc(void* args){
     data* arg = (data*) args;
     arg->array[arg->iterator] = arg->value;
-    //завершаем поток
     pthread_exit(0);
 }
 
@@ -23,8 +22,8 @@ int parallel_alg() {
     //создаем идентификаторы потоков
     pthread_t thread[4];
     temp.array = mas;
-    for(int i=0; i < size/4; i+=4){
-        temp.iterator = i;
+    for(int i=0; i < size/4; i+=4){ //разделяем цикл на 4 потока, благодаря чему он проходит в 4 раза меньше итераций
+        temp.iterator = i; // каждый поток присваивает одно из 4-х значений
         temp.value = 0;
         pthread_create(&thread[0], NULL, threadFunc, (void*) &temp);
         temp.iterator = i + 1;
