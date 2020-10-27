@@ -42,9 +42,5 @@ int parallel_alg() {
         pthread_join(thread[3], NULL);
     }
 
-    for(int i=0; i < 200; i++){
-        printf("%d", mas[i]);
-    }
-
     return 0;
 }

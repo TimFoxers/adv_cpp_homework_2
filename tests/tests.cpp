@@ -5,11 +5,12 @@
 
 extern "C" {
     #include "consistent.h"
+    #include "parallel.h"
 }
 
 std::string path;
 
-bool WorkTime() {
+bool WorkTimeConsistent() {
     clock_t start = clock();
     consistent_alg();
     clock_t end = clock();
@@ -18,8 +19,21 @@ bool WorkTime() {
     return true;
 }
 
-TEST(rw_comp, timetest) {
-    WorkTime();
+bool WorkTimeParallel() {
+    clock_t start = clock();
+    parallel_alg();
+    clock_t end = clock();
+    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    printf("The time of parallel algorithm - %f seconds\n", seconds);
+    return true;
+}
+
+TEST(rw_comp, timetest1) {
+    WorkTimeConsistent();
+}
+
+TEST(rw_comp, timetest2) {
+    WorkTimeParallel();
 }
 
 int main(int argc, char *argv[]) {
