@@ -1,5 +1,6 @@
 #ifndef HW2_CONSISTENT_H
 #define HW2_CONSISTENT_H
+#include <malloc.h>
 
 void consistent_alg();
 

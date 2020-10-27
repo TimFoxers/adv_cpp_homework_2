@@ -1,8 +1,10 @@
 #ifndef HW2_PARALLEL_H
 #define HW2_PARALLEL_H
 #include <pthread.h>
+#include <stdio.h>
+#include <malloc.h>
 
-int parallel_alg();
+void parallel_alg();
 
 void* threadFunc(void* data);
 

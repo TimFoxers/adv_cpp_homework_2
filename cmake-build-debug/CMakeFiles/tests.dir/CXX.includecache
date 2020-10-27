@@ -6,19 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/consistent.h
-
-../include/parallel.h
-pthread.h
--
-
-/home/foxers/CLionProjects/adv_cpp_homework_2/tests/tests.cpp
-gtest/gtest.h
--
-iostream
--
-consistent.h
-/home/foxers/CLionProjects/adv_cpp_homework_2/tests/consistent.h
-parallel.h
-/home/foxers/CLionProjects/adv_cpp_homework_2/tests/parallel.h
-

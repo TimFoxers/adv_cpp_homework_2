@@ -1,5 +1,4 @@
 #include "parallel.h"
-#include <stdio.h>
 
 void* threadFunc(void* args){
     data* arg = (data*) args;
@@ -7,16 +6,17 @@ void* threadFunc(void* args){
     pthread_exit(0);
 }
 
-int parallel_alg() {
-    int size = 250000;
-    int mas[size];
+void parallel_alg() {
+    int size = 1000000;
+    int *mas;
+    mas = (int*)malloc(size);
     data temp;
     void* thread_data = NULL;
 
     //создаем идентификаторы потоков
     pthread_t thread[4];
     temp.array = mas;
-    for(int i=0; i < size/4; i+=4){ //разделяем цикл на 4 потока, благодаря чему он проходит в 4 раза меньше итераций
+    for(int i=0; i < size/(4 * sizeof(int)); i+=4){ //разделяем цикл на 4 потока, благодаря чему он проходит в 4 раза меньше итераций
         temp.iterator = i; // каждый поток присваивает одно из 4-х значений
         temp.value = 0;
         pthread_create(&thread[0], NULL, threadFunc, (void*) &temp);
@@ -34,6 +34,5 @@ int parallel_alg() {
         pthread_join(thread[2], NULL);
         pthread_join(thread[3], NULL);
     }
-
-    return 0;
+    free(mas);
 }
