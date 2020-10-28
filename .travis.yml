@@ -18,5 +18,5 @@ addons:
       - valgrind
 
 script:
-  - ctest .
+  - ctest ./tests
   - cppcheck -q --enable=all ./src
