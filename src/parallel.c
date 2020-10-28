@@ -9,15 +9,14 @@ void* threadFunc(void* args){
 }
 
 void parallel_alg() {
-    int size = 1000000;
-    int *mas;
-    mas = (int*)malloc(size);
+    int size = 100000000;
+    int *array;
+    array = (int*)malloc(size);
     data temp;
-    void* thread_data = NULL;
 
     //создаем идентификаторы потоков
     pthread_t thread[4];
-    temp.array = mas;
+    temp.array = array;
     temp.size = size;
     temp.value = 0;
     pthread_create(&thread[0], NULL, threadFunc, (void*) &temp);
@@ -32,5 +31,5 @@ void parallel_alg() {
     pthread_join(thread[2], NULL);
     pthread_join(thread[3], NULL);
 
-    free(mas);
+    free(array);
 }
