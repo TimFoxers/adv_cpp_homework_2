@@ -18,10 +18,5 @@ addons:
       - valgrind
 
 script:
-  - mkdir build
-  - cd build
-  - cmake ..
-  - cmake --build .
   - ctest .
   - cppcheck -q --enable=all ../src
-  - valgrind --tool=memcheck --leak-check=full ./tests
