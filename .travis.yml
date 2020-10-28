@@ -18,7 +18,10 @@ addons:
       - valgrind
 
 script:
-  - cmake . -DTESTING=YES
-  - cppcheck include/* src/* tests/* --enable=all --check-config
-  - valgrind --leak-check=full --track-origins=yes
-  - make
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build .
+  - ctest .
+  - cppcheck -q --enable=all ../src
+  - valgrind --tool=memcheck --leak-check=full ./tests
