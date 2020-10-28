@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 ../include/consistent.h
+malloc.h
+-
 
 ../include/main.h
 stdio.h
@@ -23,10 +25,10 @@ parallel.h
 ../include/parallel.h
 pthread.h
 -
-
-/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c
-consistent.h
-/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.h
+stdio.h
+-
+malloc.h
+-
 
 /home/foxers/CLionProjects/adv_cpp_homework_2/src/main.c
 main.h
@@ -35,6 +37,4 @@ main.h
 /home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c
 parallel.h
 /home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.h
-stdio.h
--
 

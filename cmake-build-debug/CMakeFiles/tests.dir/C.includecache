@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/consistent.h
-malloc.h
--
-
 ../include/parallel.h
 pthread.h
 -
@@ -17,10 +13,6 @@ stdio.h
 -
 malloc.h
 -
-
-/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.c
-consistent.h
-/home/foxers/CLionProjects/adv_cpp_homework_2/src/consistent.h
 
 /home/foxers/CLionProjects/adv_cpp_homework_2/src/parallel.c
 parallel.h

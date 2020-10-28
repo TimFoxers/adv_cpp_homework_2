@@ -11,6 +11,7 @@ void* threadFunc(void* data);
 typedef struct data{
     int iterator;
     int value;
+    int size;
     int *array;
 } data;
 
