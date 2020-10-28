@@ -19,4 +19,4 @@ addons:
 
 script:
   - ctest .
-  - cppcheck -q --enable=all ../src
+  - cppcheck -q --enable=all ./src
