@@ -1,70 +1,60 @@
 language: cpp
 
-env:
-  global:
-    # Ubuntu version
-    - LINUX_DIST=trusty
-    - DEPS_DIR=${TRAVIS_BUILD_DIR}/deps
-    # Global build options and C++ flags
-    - CXX_FLAGS="-Wall -pedantic -Werror -Wno-variadic-macros -Wno-long-long -Wno-shadow"
-    # Misc
-    - RUN_TESTS=true
-    - COVERAGE=false
-
+# Define the matrix explicitly, manually expanding the combinations of (os, compiler, env).
+# It is more tedious, but grants us far more flexibility.
 matrix:
   include:
     - os: linux
-      dist: trusty
-      sudo: true
+      before_install: chmod -R +x ./ci/*platformio.sh
+      install: ./ci/install-platformio.sh
+      script: ./ci/build-platformio.sh
+    - os: linux
+      dist: bionic
       compiler: gcc
-      addons:
-        apt:
-          packages: &precise_latest_boost_packages
-            - gcc-4.8
-            - g++-4.8
-            #- gcov-4.9
-            - clang-3.7
-            - valgrind
-            # Misc
-            - python-yaml
-            - lcov
-            - libopencv-dev
-          sources: &precise_latest_boost_sources
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-precise-3.7
+      install: ./ci/install-linux.sh && ./ci/log-config.sh
+      script: ./ci/build-linux-bazel.sh
+    - os: linux
+      dist: bionic
+      compiler: clang
+      install: ./ci/install-linux.sh && ./ci/log-config.sh
+      script: ./ci/build-linux-bazel.sh
+    - os: linux
+      dist: bionic
+      compiler: gcc
+      env: BUILD_TYPE=Debug VERBOSE=1 CXX_FLAGS="-std=c++11 -Wdeprecated"
+    - os: linux
+      dist: bionic
+      compiler: clang
+      env: BUILD_TYPE=Release VERBOSE=1 CXX_FLAGS="-std=c++11 -Wdeprecated" NO_EXCEPTION=ON NO_RTTI=ON COMPILER_IS_GNUCXX=ON
+    - os: osx
+      compiler: gcc
+      env: BUILD_TYPE=Release VERBOSE=1 CXX_FLAGS="-std=c++11 -Wdeprecated" HOMEBREW_LOGS=~/homebrew-logs HOMEBREW_TEMP=~/homebrew-temp
+    - os: osx
+      compiler: clang
+      env: BUILD_TYPE=Release VERBOSE=1 CXX_FLAGS="-std=c++11 -Wdeprecated" HOMEBREW_LOGS=~/homebrew-logs HOMEBREW_TEMP=~/homebrew-temp
 
-before_install:
-  # Combine global build options with OS/compiler-dependent options
-  - export CMAKE_OPTIONS=${CMAKE_OPTIONS}" "${ENV_CMAKE_OPTIONS}
-  - export CXX_FLAGS=${CXX_FLAGS}" "${ENV_CXX_FLAGS}
-
+# These are the install and build (script) phases for the most common entries in the matrix.  They could be included
+# in each entry in the matrix, but that is just repetitive.
 install:
-  - if [ "$CXX" = "clang++" ] && [ "$TRAVIS_OS_NAME" = "linux" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
-  - echo ${PATH}
-  - echo ${CXX}
-  - ${CXX} --version
-  - ${CXX} -v
-  - sudo pip install codecov
+  - ./ci/install-${TRAVIS_OS_NAME}.sh
+  - . ./ci/env-${TRAVIS_OS_NAME}.sh
+  - ./ci/log-config.sh
 
-  # Download and install recent cmake
-  - |
-    if [[ ${TRAVIS_OS_NAME} == "linux" ]]; then
-      CMAKE_URL="http://www.cmake.org/files/v3.5/cmake-3.5.1-Linux-x86_64.tar.gz"
-      mkdir -p ${DEPS_DIR}/cmake
-      travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C ${DEPS_DIR}/cmake
-      export PATH=${DEPS_DIR}/cmake/bin:${PATH}
-    fi
-script:
-  ############################################################################
-  # Build main and tests
-  ############################################################################
-  - mkdir -p build
-  - cd build
-  - cmake ${CMAKE_OPTIONS} -DCMAKE_CXX_FLAGS=${CXX_FLAGS} -DCMAKE_BUILD_TYPE=Coverage -DBUILD_TESTS=ON ..
-  - make
-  - make project1_coverage
-  - ctest
+script: ./ci/travis.sh
 
+# This section installs the necessary dependencies.
+addons:
+  apt:
+    packages:
+      - g++
+      - clang
+    update: true
+  homebrew:
+    packages:
+      - ccache
+      - gcc@4.9
+      - llvm@4
+    update: true
 
-after_success:
-  - codecov -t c376990f-2ad6-4f7b-bbdb-5378a52e295c -X gcov
+notifications:
+  email: false
